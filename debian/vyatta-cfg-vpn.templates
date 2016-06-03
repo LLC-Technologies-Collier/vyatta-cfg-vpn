@@ -1,0 +1,67 @@
+Template: vyatta-cfg-vpn/countryname
+Type: string
+_DefaultChoice: GB
+_Description: Country code:
+ Please enter the two-letter ISO-3166 code to use in the SSL certificate.
+ .
+ It will become the 'countryName' field of the generated SSL certificate.
+
+Template: vyatta-cfg-vpn/statename
+Type: string
+_DefaultChoice: Scotland
+_Description: Some-State
+ Please enter the name of the administrative subdivision to use in the SSL
+ certificate.
+ .
+ It will become the 'stateOrProvinceName' field of the generated SSL
+ certificate.
+
+Template: vyatta-cfg-vpn/localityname
+Type: string
+_DefaultChoice: Edinburgh
+_Description: Locality name:
+ Please enter the name of the city or town to use in the SSL
+ certificate.
+ .
+ It will become the 'localityName' field of the generated SSL certificate.
+
+Template: vyatta-cfg-vpn/organisationname
+Type: string
+_DefaultChoice: Example Inc.
+_Description: Organization name:
+ Please enter the name of the company or organization to use in the SSL
+ certificate.
+ .
+ It will become the 'organisationName' field of the generated SSL certificate.
+
+Template: vyatta-cfg-vpn/ouname
+Type: string
+_DefaultChoice: Dept. of Examplification
+_Description: Organizational unit name:
+ Please enter the name of the division or section of the organization to use
+ in the SSL certificate.
+ .
+ It will become the 'organisationalUnitName' field of the generated
+ SSL certificate.
+
+Template: vyatta-cfg-vpn/hostname
+Type: string
+Default: localhost
+_Description: Host name:
+ Please enter the host name to use in the SSL certificate.
+ .
+ It will become the 'commonName' field of the generated SSL certificate.
+ .
+ This value is mandatory.
+
+Template: vyatta-cfg-vpn/email
+Type: string
+Default: webmaster@localhost
+_Description: Email address:
+ Please enter the email address to use in the SSL certificate.
+ .
+ It will become the 'email' field of the generated SSL certificate.
+
+Template: vyatta-cfg-vpn/title
+Type: title
+_Description: Configure an SSL Certificate.

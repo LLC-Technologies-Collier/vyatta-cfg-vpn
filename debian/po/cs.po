@@ -1,0 +1,226 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert\n"
+"Report-Msgid-Bugs-To: vyatta-cfg-vpn@packages.debian.org\n"
+"POT-Creation-Date: 2016-06-02 19:11-0400\n"
+"PO-Revision-Date: 2007-10-14 16:54+0200\n"
+"Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
+"Language-Team: Czech <debian-l10n-czech@lists-debian.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:2001
+msgid "GB"
+msgstr "CZ"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid "Country code:"
+msgstr "Kód země:"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+msgstr ""
+"Zadejte prosím dvoupísmenný kód země podle ISO-3166, který se má použít v "
+"SSL certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"It will become the 'countryName' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „countryName“."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:3001
+msgid "Scotland"
+msgstr "Morava"
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid "Some-State"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"Please enter the name of the administrative subdivision to use in the SSL "
+"certificate."
+msgstr ""
+"Zadejte prosím jméno administrativní části území, které se má použít v SSL "
+"certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"It will become the 'stateOrProvinceName' field of the generated SSL "
+"certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „stateOrProvinceName“."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:4001
+msgid "Edinburgh"
+msgstr "Olomouc"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid "Locality name:"
+msgstr "Jméno místa:"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"Please enter the name of the city or town to use in the SSL certificate."
+msgstr ""
+"Zadejte prosím jméno města nebo vesnice, které se má použít v SSL "
+"certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"It will become the 'localityName' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „localityName“."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:5001
+msgid "Example Inc."
+msgstr "Příklad s r.o."
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid "Organization name:"
+msgstr "Jméno organizace:"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"Please enter the name of the company or organization to use in the SSL "
+"certificate."
+msgstr ""
+"Zadejte prosím jméno společnosti nebo organizace, které se má použít v SSL "
+"certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"It will become the 'organisationName' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „organisationName“."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:6001
+msgid "Dept. of Examplification"
+msgstr "Oddělení vývoje a výzkumu"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid "Organizational unit name:"
+msgstr "Jméno organizační jednotky:"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"Please enter the name of the division or section of the organization to use "
+"in the SSL certificate."
+msgstr ""
+"Zadejte prosím jméno oddělení nebo části organizace, které se má použít v "
+"SSL certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"It will become the 'organisationalUnitName' field of the generated SSL "
+"certificate."
+msgstr ""
+"V certifikátu se tato informace zapíše do pole „organisationalUnitName“."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+#, fuzzy
+#| msgid "Host name:"
+msgid "Host name:"
+msgstr "Jméno počítače:"
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Zadejte prosím jméno počítače, které se má použít v SSL certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „commonName“."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "This value is mandatory."
+msgstr "Tato hodnota je povinná."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Email address:"
+msgstr "Emailová adresa:"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Please enter the email address to use in the SSL certificate."
+msgstr "Zadejte prosím emailovou adresu, která se má použít v SSL certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "It will become the 'email' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „email“."
+
+#. Type: title
+#. Description
+#: ../templates:9001
+#, fuzzy
+#| msgid "Configure an SSL certificate"
+msgid "Configure an SSL Certificate."
+msgstr "Nastavení SSL certifikátu."
+
+#~ msgid "State or province name:"
+#~ msgstr "Jméno území nebo provincie:"

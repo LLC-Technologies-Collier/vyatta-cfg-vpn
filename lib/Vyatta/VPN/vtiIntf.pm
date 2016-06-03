@@ -1,5 +1,3 @@
-#!/usr/bin/perl -w
-#
 # module to find and store exisiting vti tunnels.
 
 # **** License ****

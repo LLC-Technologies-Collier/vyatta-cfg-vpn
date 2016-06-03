@@ -18,7 +18,6 @@ config.sub
 configure
 debian/files
 debian/vyatta-cfg-vpn
-debian/vyatta-cfg-vpn.postinst
 debian/*.debhelper.log
 debian/*.substvars
 INSTALL

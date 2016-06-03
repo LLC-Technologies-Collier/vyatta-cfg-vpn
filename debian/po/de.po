@@ -1,0 +1,230 @@
+# translation of ssl-cert_1.0-15_de.po to German
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+#
+# Erik Schanze <eriks@debian.org>, 2004-2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert_1.0-15_de\n"
+"Report-Msgid-Bugs-To: vyatta-cfg-vpn@packages.debian.org\n"
+"POT-Creation-Date: 2016-06-02 19:11-0400\n"
+"PO-Revision-Date: 2007-10-24 21:57+0200\n"
+"Last-Translator: Erik Schanze <eriks@debian.org>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:2001
+msgid "GB"
+msgstr "DE"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid "Country code:"
+msgstr "Landeskennung:"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+msgstr ""
+"Bitte geben Sie die zweibuchstabige Kennung nach ISO-3166 für das SSL-"
+"Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"It will become the 'countryName' field of the generated SSL certificate."
+msgstr ""
+"Das wird im Feld »countryName« des erzeugten SSL-Zertifikates verwendet."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:3001
+msgid "Scotland"
+msgstr "Sachsen"
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid "Some-State"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"Please enter the name of the administrative subdivision to use in the SSL "
+"certificate."
+msgstr "Bitte geben Sie den Namen des Bundeslandes für das SSL-Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"It will become the 'stateOrProvinceName' field of the generated SSL "
+"certificate."
+msgstr ""
+"Das wird im Feld »stateOrProvinceName« des erzeugten SSL-Zertifikates "
+"verwendet."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:4001
+msgid "Edinburgh"
+msgstr "Dresden"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid "Locality name:"
+msgstr "Ortsname:"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"Please enter the name of the city or town to use in the SSL certificate."
+msgstr "Bitte geben Sie den Namen der Stadt für das SSL-Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"It will become the 'localityName' field of the generated SSL certificate."
+msgstr ""
+"Das wird im Feld »localityName« des erzeugten SSL-Zertifikates verwendet."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:5001
+msgid "Example Inc."
+msgstr "Beispiel GmbH"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid "Organization name:"
+msgstr "Name der Organisation:"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"Please enter the name of the company or organization to use in the SSL "
+"certificate."
+msgstr ""
+"Bitte geben Sie den Namen der Firma oder Organisation für das Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"It will become the 'organisationName' field of the generated SSL certificate."
+msgstr ""
+"Das wird im Feld »organisationName« des erzeugten SSL-Zertifikates verwendet."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:6001
+msgid "Dept. of Examplification"
+msgstr "Entwicklungsabteilung"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid "Organizational unit name:"
+msgstr "Name der Organisationseinheit:"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"Please enter the name of the division or section of the organization to use "
+"in the SSL certificate."
+msgstr ""
+"Bitte geben Sie den Namen der Abteilung in der Firma oder Organisation für "
+"das Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"It will become the 'organisationalUnitName' field of the generated SSL "
+"certificate."
+msgstr ""
+"Das wird im Feld »organisationalUnitName« des erzeugten SSL-Zertifikates "
+"verwendet."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+#, fuzzy
+#| msgid "Host name:"
+msgid "Host name:"
+msgstr "Rechnername:"
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Bitte geben Sie den Rechnernamen für das Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+"Das wird im Feld »commonName« des erzeugten SSL-Zertifikates verwendet."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "This value is mandatory."
+msgstr "Dieses Feld muss ausgefüllt werden."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Email address:"
+msgstr "E-Mail-Adresse:"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Please enter the email address to use in the SSL certificate."
+msgstr "Bitte geben Sie die E-Mail-Adresse für das SSL-Zertifikat ein."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "It will become the 'email' field of the generated SSL certificate."
+msgstr "Das wird im Feld »email« des erzeugten SSL-Zertifikates verwendet."
+
+#. Type: title
+#. Description
+#: ../templates:9001
+#, fuzzy
+#| msgid "Configure an SSL certificate"
+msgid "Configure an SSL Certificate."
+msgstr "SSL-Zertifikat einrichten"
+
+#~ msgid "State or province name:"
+#~ msgstr "Bundesland oder Provinzname:"

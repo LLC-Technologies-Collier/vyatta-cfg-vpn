@@ -1,0 +1,50 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Debconf::Client::ConfModule qw{version get};
+version('2.0');
+
+my @managed_svcs = qw( ipsec );
+
+my @questions = qw( email hostname altname countryname statename
+  localityname organisationname ouname );
+
+my $cfg = { map { $_ => get("vyatta-cfg-vpn/$_") } @questions };
+
+my $sysconfdir = '/etc/';
+my $sbindir    = '/usr/sbin';
+
+my $secrets  = "${sysconfdir}/ipsec.secrets";
+my $ipsecdir = "${sysconfdir}/ipsec.d";
+my $keydir   = "${ipsecdir}/private";
+my $certdir  = "${ipsecdir}/certs";
+my $csrdir   = "${ipsecdir}/requests";
+
+my $x509_key = "${keydir}/$cfg->{hostname}-key.pem";
+my $x509_crt = "${certdir}/$cfg->{hostname}-crt.pem";
+my $x509_csr = "${csrdir}/$cfg->{hostname}-csr.pem";
+
+disable_init();
+remove_keys();
+touch( $secrets, 'root', 'root', 0600 );
+
+sub disable_init {
+    foreach my $svc (@managed_svcs) {
+        qx(update-rc.d -f ${svc} remove 2>&1);
+    }
+}
+
+sub remove_keys {
+    unlink $secrets, $x509_key, $x509_crt;
+}
+
+sub touch {
+    my ( $filename, $user, $group, $octmode ) = @_;
+    do {
+        open( my $fh, q{>}, $filename )
+          or die "could not create file $filename: $!";
+    } unless ( -f $filename );
+    chown( scalar getpwnam($user), scalar getgrnam($group), $filename );
+    chmod( $octmode, $filename );
+}
+

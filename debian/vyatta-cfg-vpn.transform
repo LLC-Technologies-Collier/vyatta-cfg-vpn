@@ -1,0 +1,2 @@
+/etc/vyatta-cfg-vpn/openssl.cnf interpolate
+/etc/vyatta-cfg-vpn/gnutls.cnf interpolate

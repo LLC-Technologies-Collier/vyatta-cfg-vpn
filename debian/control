@@ -2,7 +2,14 @@ Source: vyatta-cfg-vpn
 Section: contrib/net
 Priority: extra
 Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
-Build-Depends: debhelper (>= 5), autotools-dev, libnfnetlink-dev, autoconf, automake, cpio
+Build-Depends: debhelper (>= 5),
+ autotools-dev,
+ libnfnetlink-dev,
+ autoconf,
+ automake,
+ cpio,
+ config-package-dev,
+ dh-autoreconf
 Standards-Version: 3.9.1
 
 Package: vyatta-cfg-vpn
@@ -14,6 +21,9 @@ Depends: perl,
  strongswan-libvici (>= 5.2),
  strongswan-swanctl (>= 5.2),
  libcrypt-openssl-rsa-perl,
+ krb5-config,
+ gnutls-bin,
+ certbot,
  libc6 (>= 2.7-6)
 Description: VyOS IPsec VPN configuration templates/scripts
  VyOS IPsec VPN configuration templates and scripts.

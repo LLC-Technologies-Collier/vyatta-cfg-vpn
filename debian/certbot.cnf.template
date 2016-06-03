@@ -1,0 +1,28 @@
+###DEBCONF###
+#
+# the configuration of this file will remain managed by debconf so
+# long as the first line remains '###DEBCONF###'
+#
+
+#
+# you should use «dpkg-reconfigure vyatta-cfg-vpn» to configure this file
+#
+
+rsa-key-size 3072
+email        "{{vyatta-cfg-vpn/email}}"
+domains      "{{vyatta-cfg-vpn/hostname}}"
+
+#csr          phx0-csr.pem
+cert-path    phx0-crt.pem
+key-path     phx0-key.pem
+agree-tos
+webroot
+webroot-path ./webroot
+expand
+no-self-upgrade
+non-interactive
+
+
+# text = True
+# authenticator = standalone
+# standalone-supported-challenges = tls-sni-01

@@ -1,0 +1,262 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.0.13\n"
+"Report-Msgid-Bugs-To: vyatta-cfg-vpn@packages.debian.org\n"
+"POT-Creation-Date: 2016-06-02 19:11-0400\n"
+"PO-Revision-Date: 2006-10-08 01:49+0900\n"
+"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:2001
+msgid "GB"
+msgstr "JP"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+#, fuzzy
+#| msgid "Country Name"
+msgid "Country code:"
+msgstr "国名"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"It will become the 'countryName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:3001
+msgid "Scotland"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid "Some-State"
+msgstr "Tokyo"
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"Please enter the name of the administrative subdivision to use in the SSL "
+"certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"It will become the 'stateOrProvinceName' field of the generated SSL "
+"certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:4001
+msgid "Edinburgh"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:4002
+#, fuzzy
+#| msgid "Locality Name"
+msgid "Locality name:"
+msgstr "市区町村名"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+#, fuzzy
+#| msgid "The name of the city or town that you live in. (localityName)"
+msgid ""
+"Please enter the name of the city or town to use in the SSL certificate."
+msgstr "あなたの住んでいる市区町村名 (localityName)"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"It will become the 'localityName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:5001
+msgid "Example Inc."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:5002
+#, fuzzy
+#| msgid "Organisation Name"
+msgid "Organization name:"
+msgstr "組織名"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+#, fuzzy
+#| msgid ""
+#| "The name of the company or organisation the certificate is for. "
+#| "(organisationName)"
+msgid ""
+"Please enter the name of the company or organization to use in the SSL "
+"certificate."
+msgstr "証明書を利用する会社または組織名(organisationName)"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"It will become the 'organisationName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:6001
+msgid "Dept. of Examplification"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:6002
+#, fuzzy
+#| msgid "Organisational Unit Name"
+msgid "Organizational unit name:"
+msgstr "部署名"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"Please enter the name of the division or section of the organization to use "
+"in the SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"It will become the 'organisationalUnitName' field of the generated SSL "
+"certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:7001
+#, fuzzy
+#| msgid "Host Name"
+msgid "Host name:"
+msgstr "ホスト名"
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "This value is mandatory."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:8001
+#, fuzzy
+#| msgid "Email Address"
+msgid "Email address:"
+msgstr "メールアドレス"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+#, fuzzy
+#| msgid "The email address that should be associated with the certificate."
+msgid "Please enter the email address to use in the SSL certificate."
+msgstr "証明書に関連するメールアドレス。"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "It will become the 'email' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: title
+#. Description
+#: ../templates:9001
+#, fuzzy
+#| msgid "Configure an SSL Certificate."
+msgid "Configure an SSL Certificate."
+msgstr "SSL 証明書を設定します。"
+
+#, fuzzy
+#~| msgid "State or Province Name"
+#~ msgid "State or province name:"
+#~ msgstr "都道府県名"
+
+#~ msgid "The two letter code for your Country. (e.g. GB) (countryName)"
+#~ msgstr "国をあらわす二文字のコード (例: JP) (countryName)"
+
+#~ msgid "Your state, county or province. (stateOrProvinceName)"
+#~ msgstr "あなたの住んでいる都道府県名。 (stateOrProvinceName)"
+
+#~ msgid "Some-Locality"
+#~ msgstr "Shinjuku-ku"
+
+#~ msgid "One Organization"
+#~ msgstr "CHENGE-default-value.org"
+
+#~ msgid "One Organization Unit"
+#~ msgstr "CHANGE-default-value.dept"
+
+#~ msgid ""
+#~ "The Division or section of the organisation the certificate is for. "
+#~ "(organisationalUnitName)"
+#~ msgstr "証明書を利用する組織の部署(organisationalUnitName)"
+
+#~ msgid ""
+#~ "The host name of the server the certificate is for. This must be filled "
+#~ "in. (commonName)"
+#~ msgstr ""
+#~ "証明書を利用するサーバのホスト名。これは入力が必須となります。(commonName)"

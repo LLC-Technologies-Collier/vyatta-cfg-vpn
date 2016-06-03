@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+use strict;
+use Debconf::Client::ConfModule qw{version get};
+version('2.0');
+
+foreach my $line ( <STDIN> ){
+  $line =~ s/{{(.+)}}/get("$1")/eg;
+  print $line;
+}

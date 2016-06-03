@@ -22,7 +22,7 @@ AC_ARG_ENABLE([nostrip],
 
 AC_CONFIG_FILES(
   [Makefile]
-  [debian/vyatta-cfg-vpn.postinst])
+)
 
 AC_SUBST(NOSTRIP)
 

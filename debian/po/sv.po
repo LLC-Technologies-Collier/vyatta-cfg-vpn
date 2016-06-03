@@ -1,0 +1,265 @@
+# Translators, if you are not familiar with the PO format, gettext
+# documentation is worth reading, especially sections dedicated to
+# this format, e.g. by running:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Some information specific to po-debconf are available at
+# /usr/share/doc/po-debconf/README-trans
+# or http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Developers do not need to manually edit POT or PO files.
+# , fuzzy
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.0-11\n"
+"Report-Msgid-Bugs-To: vyatta-cfg-vpn@packages.debian.org\n"
+"POT-Creation-Date: 2016-06-02 19:11-0400\n"
+"PO-Revision-Date: 2005-09-28 21:38-0700\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:2001
+msgid "GB"
+msgstr "SE"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+#, fuzzy
+#| msgid "Country Name"
+msgid "Country code:"
+msgstr "Land"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"It will become the 'countryName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:3001
+msgid "Scotland"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid "Some-State"
+msgstr "Någon kommun/län"
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"Please enter the name of the administrative subdivision to use in the SSL "
+"certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"It will become the 'stateOrProvinceName' field of the generated SSL "
+"certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:4001
+msgid "Edinburgh"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:4002
+#, fuzzy
+#| msgid "Locality Name"
+msgid "Locality name:"
+msgstr "Plats"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+#, fuzzy
+#| msgid "The name of the city or town that you live in. (localityName)"
+msgid ""
+"Please enter the name of the city or town to use in the SSL certificate."
+msgstr "Namnet på staden du bor i (localityName)"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"It will become the 'localityName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:5001
+msgid "Example Inc."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:5002
+#, fuzzy
+#| msgid "Organisation Name"
+msgid "Organization name:"
+msgstr "Organisation"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+#, fuzzy
+#| msgid ""
+#| "The name of the company or organisation the certificate is for. "
+#| "(organisationName)"
+msgid ""
+"Please enter the name of the company or organization to use in the SSL "
+"certificate."
+msgstr ""
+"Namnet på företaget eller organisationen som certifikatet är till för. "
+"(organisationName)"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"It will become the 'organisationName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:6001
+msgid "Dept. of Examplification"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:6002
+#, fuzzy
+#| msgid "Organisational Unit Name"
+msgid "Organizational unit name:"
+msgstr "Organisationsavdelning"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"Please enter the name of the division or section of the organization to use "
+"in the SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"It will become the 'organisationalUnitName' field of the generated SSL "
+"certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:7001
+#, fuzzy
+#| msgid "Host Name"
+msgid "Host name:"
+msgstr "Värdnamn"
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "This value is mandatory."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:8001
+#, fuzzy
+#| msgid "Email Address"
+msgid "Email address:"
+msgstr "E-postaddress"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+#, fuzzy
+#| msgid "The email address that should be associated with the certificate."
+msgid "Please enter the email address to use in the SSL certificate."
+msgstr "E-postaddressen som ska kunna kopplas ihop med detta certifikat."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "It will become the 'email' field of the generated SSL certificate."
+msgstr ""
+
+#. Type: title
+#. Description
+#: ../templates:9001
+#, fuzzy
+#| msgid "Configure an SSL Certificate."
+msgid "Configure an SSL Certificate."
+msgstr "Konfigurera ett SSL-certifikat."
+
+#, fuzzy
+#~| msgid "State or Province Name"
+#~ msgid "State or province name:"
+#~ msgstr "Kommun, Län eller Provins"
+
+#~ msgid "The two letter code for your Country. (e.g. GB) (countryName)"
+#~ msgstr "Landskoden (två bokstäver) för ditt land (normalt SE) (countryName)"
+
+#~ msgid "Your state, county or province. (stateOrProvinceName)"
+#~ msgstr "Din kommun, provins eller län (stateOrProvinceName)"
+
+#~ msgid "Some-Locality"
+#~ msgstr "Någon plats"
+
+#~ msgid "One Organization"
+#~ msgstr "En organisation"
+
+#~ msgid "One Organization Unit"
+#~ msgstr "En organisationsavdelning"
+
+#~ msgid ""
+#~ "The Division or section of the organisation the certificate is for. "
+#~ "(organisationalUnitName)"
+#~ msgstr ""
+#~ "Avdelningen eller sektionen av organisationen/företaget som certifikatet "
+#~ "är till för. (organsationalUnitName)"
+
+#~ msgid ""
+#~ "The host name of the server the certificate is for. This must be filled "
+#~ "in. (commonName)"
+#~ msgstr ""
+#~ "Värdnamnet på servern som detta certifikat är till för. Detta måste "
+#~ "fyllas i. (commonName)"

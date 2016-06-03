@@ -1,0 +1,31 @@
+###DEBCONF###
+#
+# the configuration of this file will be done by debconf as long as the
+# first line of the file says '###DEBCONF###'
+#
+# you should use dpkg-reconfigure vyatta-op-vpn to configure this file
+#
+
+[req]
+ default_bits           = 3072
+ req_extensions         = v3_req
+ string_mask            = utf8only
+ distinguished_name     = req_distinguished_name
+ prompt                 = no
+ default_md             = sha256
+ default_keyfile        = {{vyatta-cfg-vpn/hostname}}-key.pem
+
+[req_distinguished_name]
+ organizationName       = "{{vyatta-cfg-vpn/organisationname}}"
+ organizationalUnitName = "{{vyatta-cfg-vpn/ouname}}"
+ localityName           = "{{vyatta-cfg-vpn/localityname}}"
+ stateOrProvinceName    = "{{vyatta-cfg-vpn/statename}}"
+ countryName            = "{{vyatta-cfg-vpn/countryname}}"
+ commonName             = "{{vyatta-cfg-vpn/hostname}}"
+ emailAddress           = "{{vyatta-cfg-vpn/email}}"
+
+[v3_req]
+ basicConstraints       = CA:FALSE
+ keyUsage               = nonRepudiation, digitalSignature, keyEncipherment
+ extendedKeyUsage       = clientAuth, ipsecIKE
+

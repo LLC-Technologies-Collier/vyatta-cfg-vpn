@@ -1,0 +1,242 @@
+# Vietnamese translation for SSL Cert.
+# Copyright © 2007 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.0.15\n"
+"Report-Msgid-Bugs-To: vyatta-cfg-vpn@packages.debian.org\n"
+"POT-Creation-Date: 2016-06-02 19:11-0400\n"
+"PO-Revision-Date: 2007-10-16 23:24+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.7b1\n"
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:2001
+msgid "GB"
+msgstr "VN"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid "Country code:"
+msgstr "Mã quốc gia;"
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+msgstr "Hãy gõ mã hai chữ ISO-3166 cần hiển thị trong chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:2002
+msgid ""
+"It will become the 'countryName' field of the generated SSL certificate."
+msgstr "Nó sẽ điền vào trường « countryName » của chứng nhận SSL đã tạo ra."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:3001
+msgid "Scotland"
+msgstr "Thừa Thiên-Huế"
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid "Some-State"
+msgstr "Tiểu bang nào"
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"Please enter the name of the administrative subdivision to use in the SSL "
+"certificate."
+msgstr "Hãy gõ tên của miền quốc gia cần hiển thị trong chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:3002
+msgid ""
+"It will become the 'stateOrProvinceName' field of the generated SSL "
+"certificate."
+msgstr ""
+"Nó sẽ điền vào trường « stateOrProvinceName » của chứng nhận SSL đã tạo ra."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:4001
+msgid "Edinburgh"
+msgstr "Huế"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid "Locality name:"
+msgstr "Tên nơi ở ;"
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"Please enter the name of the city or town to use in the SSL certificate."
+msgstr "Hãy gõ tên của thành phố cần hiển thị trong chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:4002
+msgid ""
+"It will become the 'localityName' field of the generated SSL certificate."
+msgstr "Nó sẽ điền vào trường « localityName » của chứng nhận SSL đã tạo ra."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:5001
+msgid "Example Inc."
+msgstr "Công Ty Thí Dụ"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid "Organization name:"
+msgstr "Tên tổ chức;"
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"Please enter the name of the company or organization to use in the SSL "
+"certificate."
+msgstr "Hãy gõ tên của công ty hay tổ chức cần hiển thị trong chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:5002
+msgid ""
+"It will become the 'organisationName' field of the generated SSL certificate."
+msgstr ""
+"Nó sẽ điền vào trường « organisationName » của chứng nhận SSL đã tạo ra."
+
+#. Type: string
+#. DefaultChoice
+#: ../templates:6001
+msgid "Dept. of Examplification"
+msgstr "Phòng Ban Thí Dụ"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid "Organizational unit name:"
+msgstr "Tên đơn vị tổ chức;"
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"Please enter the name of the division or section of the organization to use "
+"in the SSL certificate."
+msgstr ""
+"Hãy gõ tên của phòng ban hay phần của công ty hay tổ chức cần hiển thị trong "
+"chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:6002
+msgid ""
+"It will become the 'organisationalUnitName' field of the generated SSL "
+"certificate."
+msgstr ""
+"Nó sẽ điền vào trường « organisationalUnitName » của chứng nhận SSL đã tạo "
+"ra."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+#, fuzzy
+#| msgid "Host name:"
+msgid "Host name:"
+msgstr "Tên máy;"
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Hãy gõ tên máy cần hiển thị trong chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "Nó sẽ điền vào trường « commonName » của chứng nhận SSL đã tạo ra."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "This value is mandatory."
+msgstr "Bắt buộc phải nhập giá trị này."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Email address:"
+msgstr "Địa chỉ thư :"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Please enter the email address to use in the SSL certificate."
+msgstr "Hãy gõ địa chỉ thư điện tử cần hiển thị trong chứng nhận SSL."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "It will become the 'email' field of the generated SSL certificate."
+msgstr "Nó sẽ điền vào trường « email » của chứng nhận SSL đã tạo ra."
+
+#. Type: title
+#. Description
+#: ../templates:9001
+#, fuzzy
+#| msgid "Configure an SSL certificate"
+msgid "Configure an SSL Certificate."
+msgstr "Cấu hình một chứng nhận SSL."
+
+#~ msgid "State or province name:"
+#~ msgstr "Tên tiểu bang hay tỉnh;"
+
+#~ msgid "The two letter code for your Country. (e.g. GB) (countryName)"
+#~ msgstr "Mã hai chữ cho quốc gia bạn (v.d. VN cho Việt Nam) (countryName)"
+
+#~ msgid "Your state, county or province. (stateOrProvinceName)"
+#~ msgstr "Tiểu bang, hạt hay tỉnh. (stateOrProvinceName)"
+
+#~ msgid "Some-Locality"
+#~ msgstr "Vùng nào"
+
+#~ msgid "One Organization"
+#~ msgstr "Tổ chức nào"
+
+#~ msgid "One Organization Unit"
+#~ msgstr "Đơn vị nào của tổ chức"
+
+#~ msgid ""
+#~ "The Division or section of the organisation the certificate is for. "
+#~ "(organisationalUnitName)"
+#~ msgstr ""
+#~ "Phân chia của tổ chức mà chứng nhận cho nó. (organisationalUnitName)"
+
+#~ msgid ""
+#~ "The host name of the server the certificate is for. This must be filled "
+#~ "in. (commonName)"
+#~ msgstr ""
+#~ "Tên máy có chạy trình phục vụ mà chứng nhận cho nó. Cần phải nhập giá trị "
+#~ "này. (commonName)"

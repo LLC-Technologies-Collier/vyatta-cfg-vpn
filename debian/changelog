@@ -1,3 +1,10 @@
+vyatta-cfg-vpn (0.12.105+vyos2+current3+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * 
+
+ -- C.J. Collier <cjcollier@linuxfoundation.org>  Fri, 03 Jun 2016 01:32:42 -0400
+
 vyatta-cfg-vpn (0.12.105+vyos2+current3) unstable; urgency=medium
 
   * Merge StrongSWAN 5.x compatibility changes from Jeff Leung

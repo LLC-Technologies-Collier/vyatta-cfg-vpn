@@ -1,0 +1,104 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Debconf::Client::ConfModule qw{get};
+Debconf::Client::ConfModule::version('2.0');
+
+my @questions = qw( email hostname altname countryname statename
+  localityname organisationname ouname );
+
+my $cfg = { map { $_ => get("vyatta-cfg-vpn/$_") } @questions };
+
+my $sysconfdir = '/etc';
+
+my $ipsecdir = "${sysconfdir}/ipsec.d";
+my $keydir   = "${ipsecdir}/private";
+my $certdir  = "${ipsecdir}/certs";
+my $csrdir   = "${ipsecdir}/requests";
+
+my $x509_key = "${keydir}/$cfg->{hostname}-key.pem";
+my $x509_crt = "${certdir}/$cfg->{hostname}-crt.pem";
+my $x509_csr = "${csrdir}/$cfg->{hostname}-csr.pem";
+
+my $ua               = 'VyOS 1.2.0-beta';
+my $template         = qq{${sysconfdir}/vyatta-cfg-vpn/gnutls.cnf};
+my $openssl_template = qq{${sysconfdir}/vyatta-cfg-vpn/openssl.cnf};
+
+sub generate_key {
+    my $cmd = join( ' ',
+        qq(certtool --generate-privkey),
+        qq(--sec-param high),
+        qq(--template ${template}),
+        qq(--outfile ${x509_key}) );
+    qx($cmd);
+}
+
+sub generate_csr {
+
+    # certtool does not generate a csr that certbot likes, unfortunately
+
+    # my $cmd = join( ' ',
+    #     qq(certtool --generate-request),
+    #     qq(--template ${template}),
+    #     qq(--load-privkey ${x509_key}),
+    #     qq(--outfile ${x509_csr}) );
+
+    my $cmd = join( ' ',
+        qq{openssl req -new},
+        qq{-config ${openssl_template}},
+        qq{-key ${x509_key}},
+        qq{-out ${x509_csr}} );
+    qx($cmd);
+}
+
+sub request_cert {
+    my $cmd = join( ' ',
+        qq{certbot certonly},
+        qq{--csr ${x509_csr}},
+        qq{--cert-path ${x509_crt}},
+        qq{--key-path ${x509_key}},
+        qq{--email $cfg->{email}},
+        qq{--domains $cfg->{hostname}},
+        qq{--user-agent "$ua"},
+        qq{--non-interactive},
+        qq{--no-self-upgrade},
+        qq{--standalone},
+        qq{--agree-tos} );
+    qx($cmd);
+}
+
+my $hook = {};
+
+$hook->{reconfigure} = sub {
+
+    generate_key();
+    generate_csr();
+    request_cert();
+
+};
+
+$hook->{configure} = sub {
+
+    # Do first-time configuration
+
+    # Do every-time configuration
+    $hook->{reconfigure}->(@_);
+};
+
+$hook->{'abort-upgrade'} = sub {
+
+};
+
+$hook->{'abort-remove'} = sub {
+
+};
+
+$hook->{'abort-deconfigure'} = sub {
+
+};
+
+my $mode = shift(@ARGV);
+$hook->{$mode}->(@ARGV);
+
+symlink $x509_key, "/config/auth/$cfg->{hostname}.key";
+symlink $x509_crt, "/config/auth/$cfg->{hostname}.crt";

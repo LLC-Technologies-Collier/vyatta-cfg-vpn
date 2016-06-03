@@ -1,0 +1,24 @@
+###DEBCONF###
+#
+# the configuration of this file will remain managed by debconf so
+# long as the first line of this file remains '###DEBCONF###'
+#
+
+#
+# you should use dpkg-reconfigure vyatta-cfg-vpn to configure this file
+#
+
+organization    = "{{vyatta-cfg-vpn/organisationname}}"
+unit            = "{{vyatta-cfg-vpn/ouname}}"
+locality        = "{{vyatta-cfg-vpn/localityname}}"
+state           = "{{vyatta-cfg-vpn/statename}}"
+country         = "{{vyatta-cfg-vpn/countryname}}"
+cn              = "{{vyatta-cfg-vpn/hostname}}"
+dns_name        = "{{vyatta-cfg-vpn/hostname}}"
+email           = "{{vyatta-cfg-vpn/email}}"
+krb5_principal  = "host/{{vyatta-cfg-vpn/hostname}}@{{krb5-config/default_realm}}"
+expiration_days = 700
+signing_key
+encryption_key
+data_encipherment
+ipsec_ike_key
